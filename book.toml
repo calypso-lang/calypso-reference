@@ -1,0 +1,34 @@
+[book]
+authors = ["ThePuzzlemaker", "Calypso Contributors"]
+language = "en"
+multilingual = false
+src = "src"
+title = "The Calypso Book"
+description = "This book is the definitive guide for Calypso. It will cover everything you will need to make applications and libraries in Calypso."
+
+[rust]
+edition = "2018"
+
+[build]
+create-missing = true
+
+[output.html]
+mathjax-support = true
+curly-quotes = true
+git-repository-url = "https://github.com/calypso-lang/guide"
+additional-css = ["src/styles.css"]
+theme = "src/theme"
+
+[output.html.fold]
+enable = true
+level = 2
+
+[options.html.playground]
+editable = true
+line-numbers = true
+
+[output.html.search]
+use-boolean-and = true
+boost-hierarchy = 2
+expand = true
+heading-split-level = 2
