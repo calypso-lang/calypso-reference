@@ -4,4 +4,4 @@
 
 ---
 
-- [Chapter 1]()
+- [Types](types.md)

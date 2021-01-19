@@ -3,8 +3,8 @@ authors = ["ThePuzzlemaker", "Calypso Contributors"]
 language = "en"
 multilingual = false
 src = "src"
-title = "The Calypso Book"
-description = "This book is the definitive guide for Calypso. It will cover everything you will need to make applications and libraries in Calypso."
+title = "The Calypso Reference"
+description = "This book is the definitive reference for Calypso. It will be more of a specification of how the Calypso programming language works."
 
 [rust]
 edition = "2018"
@@ -15,7 +15,7 @@ create-missing = true
 [output.html]
 mathjax-support = true
 curly-quotes = true
-git-repository-url = "https://github.com/calypso-lang/guide"
+git-repository-url = "https://github.com/calypso-lang/calypso-reference"
 additional-css = ["src/styles.css"]
 theme = "src/theme"
 

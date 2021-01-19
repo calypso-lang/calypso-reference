@@ -1,14 +1,16 @@
 # Introduction
 
-*The Calypso Book* is a guide on how to write code in Calypso.
+*The Calypso Reference* is a more formal specification on how the Calypso programming language works. This reference is inspired by the Rust reference book, which has definitely gotten me through some tough binds when working on stuff with macros.
 
-Currently this guide will not describe the Calypso build tool and command-line interface as those are not yet fully designed (and they may get their own book eventualy).
+This reference also describes the basic overview of how the bytecode compiler and VM work, and the basic structure of the project.
+
+Right now this may be a bit unorganized and very incomplete but in the future it will probably be better.
 
 # Notation
 
 Calypso code will be written in code blocks like this:
 
-```calypso
+```cal
 fn main() {
     println("Hello, world!")
 }
