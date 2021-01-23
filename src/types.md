@@ -155,7 +155,7 @@ println("This is a string!");
 
 ```calypso
 let mut str = "This is a string!"; // It's immutable right now. 
-str = str <> " Thanks for using it!"; // Now it's mutable.
+str ~= " Thanks for using it!"; // Now it's mutable.
 println(str); // This is a string! Thanks for using it!
 ```
 
@@ -173,7 +173,7 @@ the beginning or end of the string.
 let rainbow = '\u{1f308}';
 let zwj = '\u{200d}';
 let white_flag = '\u{1f3f3}';
-println(rainbow <> zwj <> white_flag); // 🌈‍🏳 (rainbow flag, if your browser doesn't support emoji)
+println(rainbow ~ zwj ~ white_flag); // 🌈‍🏳 (rainbow flag, if your browser doesn't support emoji)
 ```
 
 ## `tuple`
@@ -203,7 +203,7 @@ zero-indexed element number.
 ```calypso
 let arr = [1, 2, "hello"];
 println(arr[2]); // hello
-arr = arr <> [5, 2.6, 'a'];
-arr = arr <> null;
+arr ~= [5, 2.6, 'a'];
+arr ~= null;
 println(inspect(arr)); // [1, 2, "hello", 5, 2.6, 'a', null]
 ```
