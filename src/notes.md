@@ -89,13 +89,13 @@ type of the with expr:
 
 ### Pattern syntax
 
-`IDENT`: match anything and bind to variable with that name
-`_`: wildcard: match anything and don't care about value
-`A | B`: match A or B. must have same binding on either side.
-`CONSTEXPR`: match constant expression.
-`(<PATTERN>,+<,>?)`: tuple
-`IDENT$struct_name { <IDENT$field: PATTERN>,*<,>? <.. /* ignore rest */>? }`: struct
-`IDENT$variant(<PATTERN>,+<,>?)`: tuple variant
-`IDENT$variant { <IDENT$field: PATTERN>,*<,>? <.. /* ignore rest */>? }`: struct variant
-`[<PATTERN>,+<,>? <.. /* ignore rest */>?]`: list
-`[<PATTERN>,+<,>? | IDENT$tail]`: list, linked-style pattern matching. boils down to iterators/push-pop/slices, probably (cause linked lists are inefficient)
+- `IDENT`: match anything and bind to variable with that name
+- `_`: wildcard: match anything and don't care about value
+- `A | B`: match A or B. must have same binding on either side.
+- `CONSTEXPR`: match constant expression.
+- `(<PATTERN>,+<,>?)`: tuple
+- `IDENT$struct_name { <IDENT$field: PATTERN>,*<,>? <.. /* ignore rest */>? }`: struct
+- `IDENT$variant(<PATTERN>,+<,>?)`: tuple variant
+- `IDENT$variant { <IDENT$field: PATTERN>,*<,>? <.. /* ignore rest */>? }`: struct variant
+- `[<PATTERN>,+<,>? <.. /* ignore rest */>?]`: list
+- `[<PATTERN>,+<,>? | IDENT$tail]`: list, linked-style pattern matching. boils down to iterators/push-pop/slices, probably (cause linked lists are inefficient)
