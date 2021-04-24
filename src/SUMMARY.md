@@ -4,4 +4,6 @@
 
 ---
 
+- [Notation](notation.md)
+- [Notes](notes.md)
 - [Types](types.md)
